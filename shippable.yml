@@ -4,7 +4,7 @@ node_js:
   - "0.10"
 
 addons:
-  firefox: "24.0"
+  firefox: "25.0"
 
 services:
   - selenium
