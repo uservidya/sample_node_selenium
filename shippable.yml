@@ -4,7 +4,7 @@ node_js:
   - "0.10"
 
 addons:
-  firefox: "27.0"
+  firefox: "19.0"
 
 services:
   - selenium
