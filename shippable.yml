@@ -12,7 +12,10 @@ services:
 before_script:
   - "export DISPLAY=:99.0"
   - "/etc/init.d/xvfb start"
-
+script:
+  - echo $foo
 after_script:
   - "/etc/init.d/xvfb stop"
 
+env:
+ secure: BmB+JMRQagrU1wWu43LDDHPnzSRen0+BbBYJrs23sI/lFyISVmKmp8d62HgrUaEPNTpyh1xI9PRR7TtrBxDtbBYOgAFDCGwc1ZCZghvhveqn3XDj9sCX7IMz8AlzYhZVAzAANDDK+Al/CuYWAnkao3UGBozjZwxuAKLKf64jiEOOE4BdROEN0l6Fvl1YgOGhj7Ce6U/MMBRlyBBt57Xyo7Fr5/DEYSh1Kl95CVX4vXrQDl919Ih44FKdA9MCgKdVJ9d34lyBztA74JVJoFywrWglqeB6/CZldLHmHHjHG0vbXmqXn0UhN2GThAKPu3eRt1Rszhdpzqt/7twHK/hqyA==
