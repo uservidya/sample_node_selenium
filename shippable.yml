@@ -13,6 +13,11 @@ before_script:
   - "export DISPLAY=:99.0"
   - "/etc/init.d/xvfb start"
 
+script:
+ - echo $var
 after_script:
   - "/etc/init.d/xvfb stop"
 
+env:
+  global:
+    - secure: cMLJ78AGLsbX4jomGg3/YSBRYJ6mrgqeO3DF4UzoKmrQBShzfz0Pk+8hUhbwaIN6HtKPHxEsPaEe28sgCq6BDbnypQtiXNZmU5A+TzlfMgI5JUPG7euW9BVceJZBzgos9T1BCp4Q3julLGhXJeNb73R+mQdlb3aMbWnD38qRwAOT0TioC3nFztlR33NA5UwgGhk6Ng6UjsdSWCAC7ZpdvaVEjiS1kmWShYo7TmBOxFn2/hDKF/Pn1kGAba8nNMDmAKsvHBtpifAI0XrruLkSVmTlUBAYOy6Splisq2oOdgNIYt5Yx1IoVnWXOJFYPRdKj9iqEERSczcEzHRR0R06TA==
